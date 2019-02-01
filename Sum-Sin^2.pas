@@ -1,6 +1,9 @@
 //sin^2(5) + sin^2(10) + sin^2(15) + ... + sin^2(90) = ??
-  var i : Integer;
-    angle, sum : Real;
+uses
+  SysUtils, math;
+var i : Integer;
+    angle, sum : Real;    
+begin
   sum := 0.0;
   i := 5;
   repeat
@@ -10,3 +13,4 @@
   until i > 90;
   Writeln(sum:3:4);
   Readln;
+end.
