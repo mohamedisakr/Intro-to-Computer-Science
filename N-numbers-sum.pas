@@ -1,6 +1,6 @@
 // summation of n numbers   
 uses  SysUtils, math;
-var n, sum, t : Integer;
+var n, sum : Integer;
     inFile : TextFile;
 
 // read from default input 27 21 27 73 2 47 56 49 95 83 0
@@ -23,8 +23,8 @@ begin
   Reset(inFile);
   while not Eof(inFile) do
   begin
-    Read(inFile, t);
-    sum := sum + t;
+    Read(inFile, n);
+    sum := sum + n;
   end;
   CloseFile(inFile);
   Writeln(sum);
